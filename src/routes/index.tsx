@@ -32,7 +32,10 @@ function Index() {
             Detect AI-generated faces and cloned voices instantly using multimodal AI analysis. Built for journalists, security teams, and digital defenders.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-            <Link to="/about" className="px-7 py-3.5 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple font-display font-bold text-primary-foreground neon-glow hover:scale-105 transition-transform inline-flex items-center gap-2">
+            <Link to="/detection" className="px-7 py-3.5 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple font-display font-bold text-primary-foreground neon-glow hover:scale-105 transition-transform inline-flex items-center gap-2">
+              <Radar className="h-5 w-5" /> Try Live Detection
+            </Link>
+            <Link to="/about" className="px-7 py-3.5 rounded-lg glass-strong font-display font-bold hover:border-neon-blue/60 transition-all inline-flex items-center gap-2">
               <Shield className="h-5 w-5" /> Learn More
             </Link>
           </div>

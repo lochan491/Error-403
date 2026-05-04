@@ -1,5 +1,5 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Home, Info } from "lucide-react";
+import { Home, Radar, Info } from "lucide-react";
 import {
   Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
   SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar,
@@ -8,6 +8,7 @@ import { ShieldLogo } from "./ShieldLogo";
 
 const items = [
   { title: "Home", url: "/" as const, icon: Home },
+  { title: "Live Detection", url: "/detection" as const, icon: Radar },
   { title: "About", url: "/about" as const, icon: Info },
 ];
 
