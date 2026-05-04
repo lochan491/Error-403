@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { AnimatedBg } from "@/components/AnimatedBg";
-import { Radar, Upload, BarChart3, Zap, Shield, Activity, Brain, Eye } from "lucide-react";
+import { Radar, Zap, Shield, Activity, Brain, Eye } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
