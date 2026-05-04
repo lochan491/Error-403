@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { AnimatedBg } from "@/components/AnimatedBg";
-import { Radar, Zap, Shield, Activity, Brain, Eye } from "lucide-react";
+import { Radar, Upload, BarChart3, Zap, Shield, Activity, Brain, Eye } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -32,11 +32,14 @@ function Index() {
             Detect AI-generated faces and cloned voices instantly using multimodal AI analysis. Built for journalists, security teams, and digital defenders.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-            <Link to="/detection" className="px-7 py-3.5 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple font-display font-bold text-primary-foreground neon-glow hover:scale-105 transition-transform inline-flex items-center gap-2">
+            <Link to="/detection" className="group relative px-7 py-3.5 rounded-lg bg-gradient-to-r from-neon-blue to-neon-purple font-display font-bold text-primary-foreground neon-glow hover:scale-105 transition-transform inline-flex items-center gap-2">
               <Radar className="h-5 w-5" /> Try Live Detection
             </Link>
-            <Link to="/about" className="px-7 py-3.5 rounded-lg glass-strong font-display font-bold hover:border-neon-blue/60 transition-all inline-flex items-center gap-2">
-              <Shield className="h-5 w-5" /> Learn More
+            <Link to="/detection" className="px-7 py-3.5 rounded-lg glass-strong font-display font-bold hover:border-neon-blue/60 transition-all inline-flex items-center gap-2">
+              <Upload className="h-5 w-5" /> Upload Video
+            </Link>
+            <Link to="/analytics" className="px-7 py-3.5 rounded-lg border border-border hover:border-neon-purple/60 hover:bg-card/50 transition-all inline-flex items-center gap-2">
+              <BarChart3 className="h-5 w-5" /> View Analytics
             </Link>
           </div>
 

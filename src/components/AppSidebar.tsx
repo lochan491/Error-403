@@ -1,5 +1,5 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Home, Radar, Info } from "lucide-react";
+import { Home, Radar, BarChart3, Fingerprint, Network, Info, ShieldCheck, Cpu } from "lucide-react";
 import {
   Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel,
   SidebarMenu, SidebarMenuButton, SidebarMenuItem, useSidebar,
@@ -7,9 +7,14 @@ import {
 import { ShieldLogo } from "./ShieldLogo";
 
 const items = [
-  { title: "Home", url: "/" as const, icon: Home },
-  { title: "Live Detection", url: "/detection" as const, icon: Radar },
-  { title: "About", url: "/about" as const, icon: Info },
+  { title: "Home", url: "/", icon: Home },
+  { title: "Live Detection", url: "/detection", icon: Radar },
+  { title: "Analytics", url: "/analytics", icon: BarChart3 },
+  { title: "Attribution", url: "/attribution", icon: Fingerprint },
+  { title: "Architecture", url: "/architecture", icon: Network },
+  { title: "Features", url: "/features", icon: ShieldCheck },
+  { title: "Tech Stack", url: "/tech", icon: Cpu },
+  { title: "About", url: "/about", icon: Info },
 ];
 
 export function AppSidebar() {
